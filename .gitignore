@@ -1,0 +1,6 @@
+# Update the program name here if you changed it
+main
+
+build/
+
+.sconsign.dblite

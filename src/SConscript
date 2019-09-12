@@ -1,0 +1,6 @@
+PROGRAM_NAME = 'main' # Modify the program name if needed
+
+Import('env')
+env.Append(CPPPath='.')
+prog = env.Program(PROGRAM_NAME, Glob('*.cpp'))
+Return('prog')
