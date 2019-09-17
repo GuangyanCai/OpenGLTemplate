@@ -1,5 +1,8 @@
 # Update the program name here if you changed it
 main
+main.exe
+
+*.dll
 
 build/
 

@@ -4,3 +4,9 @@ glew/2.1.0@bincrafters/stable
 
 [generators]
 scons
+
+[options]
+glfw:shared=True
+
+[imports]
+bin, *.dll -> ../
