@@ -4,6 +4,7 @@
 
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
+#include <glm/glm.hpp>
 #include <iostream>
 
 int main(void)
@@ -31,6 +32,8 @@ int main(void)
         fprintf(stderr, "Error: %s\n", glewGetErrorString(err));
         return -1;
     }
+
+    
 
     /* Loop until the user closes the window */
     while (!glfwWindowShouldClose(window))

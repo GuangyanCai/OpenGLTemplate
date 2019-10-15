@@ -3,7 +3,10 @@ import platform
 
 class OpenGL(ConanFile):
     settings = 'os', 'compiler', 'build_type', 'arch'
-    requires = 'glfw/3.3@bincrafters/stable', 'glew/2.1.0@bincrafters/stable'
+    requires = \
+        'glfw/3.3@bincrafters/stable', \
+        'glew/2.1.0@bincrafters/stable', \
+        'glm/0.9.9.5@g-truc/stable'
     generators = 'scons'
     if platform.system() == 'Windows':
         default_options = {'glfw:shared': True, 'glew:shared': False}
