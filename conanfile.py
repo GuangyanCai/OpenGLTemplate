@@ -13,4 +13,4 @@ class OpenGL(ConanFile):
 
     def imports(self):
         if platform.system() == 'Windows':
-            self.copy('*.dll', dst='..', src='bin')
+            self.copy('*.dll', dst='.', src='bin')
